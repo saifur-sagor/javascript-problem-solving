@@ -78,7 +78,7 @@ function sumArray(arr) {
 const sum = sumArray([1, 2, 3, 4]);
 console.log({ sum });
 
-// problem-6
+// problem-7
 function findEvenNumbers(arr) {
   let evenNumbers = [];
 
@@ -91,3 +91,18 @@ function findEvenNumbers(arr) {
 }
 const evenNumbers = findEvenNumbers([1, 2, 3, 4, 5, 6]);
 console.log({ evenNumbers });
+
+
+// problem-8
+
+function capitalizeWords(str) {
+  let words = str.split(" ");
+  let result = [];
+
+  for (let i = 0; i < words.length; i++) {
+    result.push(words[i][0].toUpperCase() + words[i].slice(1));
+  }
+  return result.join(" ");
+}
+const capitalWord=capitalizeWords("hello world")
+console.log({capitalWord});
