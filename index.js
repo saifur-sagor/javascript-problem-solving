@@ -62,5 +62,18 @@ function removeDuplicates(arr) {
   return uniqueArray;
 }
 
-const remove = removeDuplicates([1, 2, 2, 7, 7, 5, 4, 4, 8, 8, 3, 4, 4]);
+const remove = removeDuplicates([1, 2, 2, 7, 7,4,4]);
 console.log({ remove });
+
+// problem-6
+
+function sumArray(arr) {
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+const sum=sumArray([1, 2, 3, 4])
+console.log({sum});
