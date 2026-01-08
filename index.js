@@ -46,5 +46,21 @@ function maxNumber(arr) {
   }
   return max;
 }
-const findMax=maxNumber([1,5,8,3,7])
-console.log({findMax});
+const findMax = maxNumber([1, 5, 8, 3, 7]);
+console.log({ findMax });
+
+// problem -5
+
+function removeDuplicates(arr) {
+  let uniqueArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArray.includes(arr[i])) {
+      uniqueArray.push(arr[i]);
+    }
+  }
+  return uniqueArray;
+}
+
+const remove = removeDuplicates([1, 2, 2, 7, 7, 5, 4, 4, 8, 8, 3, 4, 4]);
+console.log({ remove });
