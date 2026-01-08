@@ -8,5 +8,21 @@ function reverseString(str) {
   }
   return reversed;
 }
-const outputString = reverseString("Hello");
-console.log(outputString);
+const outputString = reverseString("hello");
+console.log({ outputString });
+
+//  problem-2
+
+function countVowels(str) {
+  let vowels = "aeiou";
+  let count = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toLowerCase())) {
+      count++;
+    }
+  }
+  return count;
+}
+const countValue = countVowels("programming");
+console.log({ countValue });
