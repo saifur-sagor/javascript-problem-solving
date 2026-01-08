@@ -26,3 +26,11 @@ function countVowels(str) {
 }
 const countValue = countVowels("programming");
 console.log({ countValue });
+
+// problem-3
+function isPalindrome(str) {
+  let reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+const palindrome = isPalindrome("madam");
+console.log({ palindrome });
