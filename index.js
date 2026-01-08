@@ -34,3 +34,17 @@ function isPalindrome(str) {
 }
 const palindrome = isPalindrome("madam");
 console.log({ palindrome });
+
+// problem-4
+
+function maxNumber(arr) {
+  let max = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+const findMax=maxNumber([1,5,8,3,7])
+console.log({findMax});
