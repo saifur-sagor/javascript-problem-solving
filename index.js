@@ -92,7 +92,6 @@ function findEvenNumbers(arr) {
 const evenNumbers = findEvenNumbers([1, 2, 3, 4, 5, 6]);
 console.log({ evenNumbers });
 
-
 // problem-8
 
 function capitalizeWords(str) {
@@ -104,5 +103,17 @@ function capitalizeWords(str) {
   }
   return result.join(" ");
 }
-const capitalWord=capitalizeWords("hello world")
-console.log({capitalWord});
+const capitalWord = capitalizeWords("hello developer");
+console.log({ capitalWord });
+
+// problem-9
+function factorial(num) {
+  let result = 1;
+
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+const factorialValue = factorial(3);
+console.log({ factorialValue });
