@@ -62,7 +62,7 @@ function removeDuplicates(arr) {
   return uniqueArray;
 }
 
-const remove = removeDuplicates([1, 2, 2, 7, 7,4,4]);
+const remove = removeDuplicates([1, 2, 2, 7, 7, 4, 4]);
 console.log({ remove });
 
 // problem-6
@@ -75,5 +75,19 @@ function sumArray(arr) {
   }
   return sum;
 }
-const sum=sumArray([1, 2, 3, 4])
-console.log({sum});
+const sum = sumArray([1, 2, 3, 4]);
+console.log({ sum });
+
+// problem-6
+function findEvenNumbers(arr) {
+  let evenNumbers = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evenNumbers.push(arr[i]);
+    }
+  }
+  return evenNumbers;
+}
+const evenNumbers = findEvenNumbers([1, 2, 3, 4, 5, 6]);
+console.log({ evenNumbers });
